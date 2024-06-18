@@ -1,10 +1,10 @@
 <script>
-import axios from 'axios'
-import 
+import axios from 'axios';
+import CharacterCard from './CharacterCard.vue';
 
 export default {
   components: {
-    ,
+    CharacterCard,
   },
   data() {
     return {
@@ -25,12 +25,11 @@ export default {
           this.characters = response.data.characters.data
           this.currentPage = response.data.characters.current_page
           this.lastPage = response.data.characters.last_page
-          console.log(response)
         })
     }
   },
   created() {
-    this.fetchCharacters(1, 10);
+    this.fetchCharacters(1, 3);
   }
 }
 
@@ -39,7 +38,7 @@ export default {
 <template>
 
   <main>
-    <section class="h-100">
+    <section class="d-flex flex-column justify-content-between align-items-center h-100">
       <div class="container pt-5 flex-grow-1">
         <div class="row h-100">
           <div v-for="character in characters" class="col-4 p-3">
