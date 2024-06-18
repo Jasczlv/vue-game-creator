@@ -30,10 +30,10 @@ export default {
         <div>
           <ul class="list-unstyled">
             <li>{{ item.type.name }}</li>
-            <li>{{ item.life }}<i class="fa-solid fa-heart"></i></li>
-            <li>{{ item.attack }}<i class="fa-solid fa-hand-fist"></i></li>
-            <li>{{ item.defence }}<i class="fa-solid fa-shield"></i></li>
-            <li>{{ item.speed }}<i class="fa-solid fa-bolt"></i></li>
+            <li>{{ item.life }} <font-awesome-icon :icon="['fas', 'heart']" /></li>
+            <li>{{ item.attack }} <font-awesome-icon :icon="['fas', 'hand-fist']" /></li>
+            <li>{{ item.defence }} <font-awesome-icon :icon="['fas', 'shield']" /></li>
+            <li>{{ item.speed }} <font-awesome-icon :icon="['fas', 'bolt']" /></li>
           </ul>
         </div>
         <p class="position-absolute bottom-0">{{ item.description }}</p>
