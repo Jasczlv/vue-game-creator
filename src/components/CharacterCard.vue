@@ -13,13 +13,13 @@ export default {
 
 <template>
 
-  <header>
-    <section class="bg-dark">
-      <div class="container py-5 text-center text-white">
-        <h1>HEADER</h1>
-      </div>
-    </section>
-  </header>
+  <div class="card h-100">
+
+    <div class="card-header text-center">
+      <h3 class="fs-5">{{ item.name }}</h3>
+    </div>
+
+  </div>
 
 </template>
 

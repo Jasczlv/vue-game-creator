@@ -38,10 +38,10 @@ export default {
 
   <main>
     <section class="h-100">
-      <div class="container py-5 h-100">
-        <div class="row aling-items-center flex-column justify-content-center h-100">
-          <div class="col-auto text-center">
-            <h1>Hello Vue <font-awesome-icon :icon="['fab', 'vuejs']" /></h1>
+      <div class="container pt-5 flex-grow-1">
+        <div class="row h-100">
+          <div v-for="character in characters" class="col-4 p-3">
+            <CharacterCard :item="character"></CharacterCard>
           </div>
         </div>
       </div>

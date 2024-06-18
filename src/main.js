@@ -5,7 +5,7 @@ import App from "./App.vue";
 // routes
 import { createRouter, createWebHistory } from "vue-router";
 
-import Home from "";
+/* import Home from ""; */
 
 /* import the fontawesome core */
 import { library } from "@fortawesome/fontawesome-svg-core";
