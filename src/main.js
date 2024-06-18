@@ -5,7 +5,7 @@ import App from "./App.vue";
 // routes
 import { createRouter, createWebHistory } from "vue-router";
 
-import Home from "";
+import AppHome from "./pages/AppHome.vue";
 
 /* import the fontawesome core */
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -18,6 +18,12 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* add icons to the library */
 library.add(fas, far, fab);
+
+// routes
+const router = createRouter({
+  history: createWebHistory(),
+  routes: [{ path: "/", component: AppHome }],
+});
 
 const app = createApp(App);
 
