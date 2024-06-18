@@ -23,6 +23,7 @@ export default {
 
   <div id="app">
     <AppHeader></AppHeader>
+    <router-view></router-view>
     <AppContent></AppContent>
     <AppFooter></AppFooter>
 
