@@ -1,5 +1,10 @@
 <script>
-export default {};
+import AppContent from "../components/AppContent.vue";
+export default {
+  components: {
+    AppContent,
+  },
+};
 </script>
 
 <template>
@@ -12,6 +17,7 @@ export default {};
       explicabo. Officiis, harum quia!
     </p>
   </div>
+  <AppContent></AppContent>
 </template>
 
 <style lang="scss" scoped></style>

@@ -5,9 +5,9 @@ import App from "./App.vue";
 // routes
 import { createRouter, createWebHistory } from "vue-router";
 
-import AppHome from "./pages/AppHome.vue";
-import Edit from "./pages/Edit.vue";
-import Show from "./pages/Show.vue";
+import AppHome from "./paths/AppHome.vue";
+import Edit from "./paths/Edit.vue";
+import Show from "./paths/Show.vue";
 
 /* import the fontawesome core */
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -26,12 +26,14 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: "/", component: AppHome },
-    { path: "/", component: Edit },
-    { path: "/", component: Show },
+    { path: "/edit", component: Edit },
+    { path: "/show", component: Show },
   ],
 });
 
 const app = createApp(App);
+
+app.use(router);
 
 app.component("font-awesome-icon", FontAwesomeIcon);
 

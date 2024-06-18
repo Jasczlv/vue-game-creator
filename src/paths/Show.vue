@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <h1>Character's Info</h1>
+  </div>
 </template>
 
 <script>
